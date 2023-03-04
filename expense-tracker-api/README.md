@@ -47,3 +47,6 @@ Database relationship
 ## To do
 - Using Spring Data JPA for working with database
 - Provide frontend for this service
+
+## Reference
+- Follow the tutorial https://www.youtube.com/watch?v=5VUjP1wMqoE&t=6135s
