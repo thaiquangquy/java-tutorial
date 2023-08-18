@@ -5,7 +5,7 @@ The project for learning Java Spring Boot
 
 ## Overview:
 
-![Architecture](/misc/service-arch-draw/customer-service-arch.drawio.png)
+![Architecture](misc/service-arch-draw/customer-service-arch.drawio.png)
 
 - customer: manage customer database via RestAPI
 - eureka-server: provide network discovery
