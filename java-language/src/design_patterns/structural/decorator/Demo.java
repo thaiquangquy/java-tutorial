@@ -1,4 +1,6 @@
-package design_patterns.structural.decorator.decorators;
+package design_patterns.structural.decorator;
+
+import design_patterns.structural.decorator.decorators.*;
 
 public class Demo {
     public static void main(String[] args) {
