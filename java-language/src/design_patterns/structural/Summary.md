@@ -1,0 +1,13 @@
+### **Structural Patterns**
+
+| Pattern | Problem | Solution | Applicability | Pros & Cons | Comparison |
+|---------|---------|----------|--------------|------------|------------|
+| **Adapter** | How to make incompatible interfaces work together? | Converts one interface into another that clients expect. | When integrating legacy code or different interfaces. | ✅Enhances code reuse<br>✅Improves flexibility<br>❌Adds an extra layer | Similar to Bridge, but Adapter works with existing interfaces. |
+| **Bridge** | How to separate abstraction from implementation? | Decouples abstraction from implementation, making both independently extendable. | When needing flexibility between abstraction and implementation. | ✅Increases maintainability<br>✅Supports multiple variations<br>❌Can be complex | Unlike Adapter, it’s designed upfront to support variations. |
+| **Composite** | How to treat a group of objects like a single object? | Composes objects into tree structures to represent part-whole hierarchies. | When objects should be treated uniformly. | ✅Simplifies client code<br>✅Supports recursive structures<br>❌Can be harder to manage | Different from Decorator, which modifies behavior instead of structure. |
+| **Decorator** | How to dynamically add behaviors to objects? | Wraps objects with additional functionality without modifying their structure. | When extension is needed without modifying base classes. | ✅Flexible alternative to inheritance<br>✅Encapsulates behaviors<br>❌Can lead to many small objects | Unlike Composite, it doesn’t represent a tree structure. |
+| **Facade** | How to simplify interactions with complex subsystems? | Provides a unified interface to a set of interfaces. | When working with complex systems needing a simpler API. | ✅Reduces complexity<br>✅Encapsulates system details<br>❌Can become a god object | Different from Adapter, which converts one interface to another. |
+| **Flyweight** | How to efficiently manage a large number of similar objects? | Shares common parts of objects to reduce memory usage. | When dealing with large numbers of similar objects (e.g., text editors, game elements). | ✅Saves memory<br>✅Improves performance<br>❌Increased complexity | Unlike Proxy, which controls access, Flyweight optimizes memory. |
+| **Proxy** | How to control access to an object? | Provides a placeholder to control access to an object. | When managing access (e.g., security, lazy loading). | ✅Improves security<br>✅Supports lazy initialization<br>❌Can add overhead | Unlike Adapter, it doesn’t change the interface. |
+
+Source: [refactoring.guru](https://refactoring.guru/design-patterns/structural-patterns)

@@ -1,0 +1,11 @@
+### **Creational Patterns**
+
+| Pattern | Problem | Solution | Applicability | Pros & Cons | Comparison |
+|---------|---------|----------|--------------|------------|------------|
+| **Factory Method** | How to create objects without specifying their exact class? | Define an interface for creating objects, letting subclasses decide which class to instantiate. | Use when the exact type of object isn't known beforehand. | ✅Encapsulates object creation<br>✅Promotes loose coupling<br>❌Can introduce complexity | Similar to Abstract Factory, but focuses on a single product. |
+| **Abstract Factory** | How to create related objects without specifying their concrete classes? | Provides an interface to create families of related objects. | When multiple related objects need to be created together. | ✅Ensures consistency between products<br>✅Encapsulates object creation<br>❌Complex for simple use cases | Extends Factory Method by managing families of objects. |
+| **Builder** | How to create complex objects step by step? | Separates object construction from its representation. | When objects have multiple configurations. | ✅Improves readability<br>✅Simplifies object construction<br>❌More classes needed | Unlike Factory, it focuses on constructing objects gradually. |
+| **Prototype** | How to create objects based on a template? | Clones an existing object instead of creating a new instance. | When object creation is costly or complex. | ✅Reduces overhead of instantiation<br>✅Preserves existing object state<br>❌Cloning might be complex | Unlike Factory or Builder, it copies existing objects. |
+| **Singleton** | How to ensure only one instance of a class exists? | Restricts instantiation to a single object. | When exactly one instance is needed (e.g., logging, database connection). | ✅Prevents multiple instances<br>✅Saves resources<br>❌Introduces global state issues | Unlike other creational patterns, it restricts object creation. |
+
+Source: [refactoring.guru](https://refactoring.guru/design-patterns/creational-patterns)
