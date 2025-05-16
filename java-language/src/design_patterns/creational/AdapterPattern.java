@@ -1,5 +1,7 @@
 package design_patterns.creational;
 
+//Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
+
 interface MediaPlayer {
     void play(String audioType, String fileName);
 }
@@ -38,4 +40,21 @@ public class AdapterPattern {
         AdvancedMediaPlayer mp4Player = new Mp4Player();
         mp4Player.playMp4("example2.mp4");
     }
+}
+
+public static String EvenPairs(String str) {
+    String result = "false";
+    HashMap<number, number> evenNum = new HashMap<>();
+    for (int i = 0; i < str.length(); i++) {
+        if (Character.isDigit(str[i])) {
+            int d
+            evenNum.put(i, )
+        }
+    }
+
+    // code goes here
+    int first_idx = 0;
+    int last_idx = 0;
+    while(first_idx <= last_idx && )
+        return result;
 }

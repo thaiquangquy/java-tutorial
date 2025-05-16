@@ -20,16 +20,16 @@ public class Main {
     @PostConstruct
     public void runAfterInitialization() {
         MyRepository newRepo = new MyRepository();
-        DependencyInjectionExample.MyService myDIService = new DependencyInjectionExample.MyService(newRepo);
-        myDIService.print();
+        DependencyInjectionExample.MyConstructorDIService constructorDIService = new DependencyInjectionExample.MyConstructorDIService(newRepo);
+        constructorDIService.print();
 
-        DependencyInjectionExample.MyService2 myDIService2 = new DependencyInjectionExample.MyService2();
-        myDIService2.setMyRepository(newRepo);
-        myDIService2.print();
+        DependencyInjectionExample.MySetterDIService setterDIService = new DependencyInjectionExample.MySetterDIService();
+        setterDIService.setMyRepository(newRepo);
+        setterDIService.print();
 
-        DependencyInjectionExample.MyService22 myDIService22 = new DependencyInjectionExample.MyService22();
-//        myDIService22.setMyRepository(newRepo);
-        myDIService22.print(); // Should throw error since repo is not set
+        DependencyInjectionExample.MySetterDIAutowiredService setterDIAutowiredService = new DependencyInjectionExample.MySetterDIAutowiredService();
+//        setterDIAutowiredService.setMyRepository(newRepo);
+        setterDIAutowiredService.print(); // Should throw error since repo is not set
 
         // Assuming DependencyInjectionExample.MyService3 is properly configured for Spring DI
 //        myDIService3.print();

@@ -1,9 +1,7 @@
 package org.example.dependency_injection;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 public class DependencyInjectionExample {
     // Dependency Injection (DI) is a design pattern used to implement Inversion of Control (IoC),
@@ -13,10 +11,10 @@ public class DependencyInjectionExample {
 
     // How Dependency Injection Works
     // Constructor Injection: Dependencies are provided through a class constructor. This is the most common method.
-    public static class MyService {
+    public static class MyConstructorDIService {
         private final MyRepository myRepository;
 
-        public MyService(MyRepository myRepository) {
+        public MyConstructorDIService(MyRepository myRepository) {
             this.myRepository = myRepository;
         }
 
@@ -27,7 +25,7 @@ public class DependencyInjectionExample {
     }
 
     // Setter Injection: Dependencies are provided through setter methods.
-    public static class MyService2 {
+    public static class MySetterDIService {
         private MyRepository myRepository;
 
         public void setMyRepository(MyRepository myRepository) {
@@ -45,7 +43,7 @@ public class DependencyInjectionExample {
     }
 
     @Component
-    public static class MyService22 {
+    public static class MySetterDIAutowiredService {
         private MyRepository myRepository;
 
         @Autowired
@@ -64,11 +62,11 @@ public class DependencyInjectionExample {
 
     // Field Injection: Dependencies are provided directly into fields, typically using annotations.
     @Component
-    public static class MyService3 {
+    public static class MyFieldDIService {
         private final MyRepository myRepository;
 
         @Autowired
-        public MyService3(MyRepository myRepository) {
+        public MyFieldDIService(MyRepository myRepository) {
             this.myRepository = myRepository;
         }
 
