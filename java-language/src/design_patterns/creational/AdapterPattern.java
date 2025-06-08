@@ -33,28 +33,11 @@ class Mp4Player implements AdvancedMediaPlayer {
 }
 
 public class AdapterPattern {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         AdvancedMediaPlayer vlcPlayer = new VlcPlayer();
         vlcPlayer.playVlc("example1.vlc");
 
         AdvancedMediaPlayer mp4Player = new Mp4Player();
         mp4Player.playMp4("example2.mp4");
     }
-}
-
-public static String EvenPairs(String str) {
-    String result = "false";
-    HashMap<number, number> evenNum = new HashMap<>();
-    for (int i = 0; i < str.length(); i++) {
-        if (Character.isDigit(str[i])) {
-            int d
-            evenNum.put(i, )
-        }
-    }
-
-    // code goes here
-    int first_idx = 0;
-    int last_idx = 0;
-    while(first_idx <= last_idx && )
-        return result;
 }
