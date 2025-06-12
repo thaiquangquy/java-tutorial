@@ -1,4 +1,4 @@
-package org.example.hibernate.finalSolution;
+package org.example.hibernate.optimization.finalSolution;
 
 
 import jakarta.persistence.*;

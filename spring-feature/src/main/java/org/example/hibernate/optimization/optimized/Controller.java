@@ -1,6 +1,7 @@
-package org.example.hibernate.finalSolution;
+package org.example.hibernate.optimization.optimized;
 
-class Controller {
+@org.springframework.stereotype.Controller
+public class Controller {
     private HibernateLongRunning service;
 
     int processRequest() {
@@ -9,5 +10,3 @@ class Controller {
         return result;
     }
 }
-
-

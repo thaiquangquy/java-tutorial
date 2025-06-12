@@ -1,6 +1,4 @@
-package org.example.hibernate.original;
-
-import org.springframework.stereotype.Component;
+package org.example.hibernate.optimization.original.original;
 
 @org.springframework.stereotype.Controller
 class Controller {

@@ -1,4 +1,4 @@
-package org.example.hibernate.optimized;
+package org.example.hibernate.optimization.optimized;
 
 import jakarta.persistence.EntityManager;
 import org.springframework.stereotype.Component;

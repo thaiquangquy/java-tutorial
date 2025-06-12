@@ -1,4 +1,4 @@
-package org.example.hibernate.original;
+package org.example.hibernate.optimization.original.original;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
