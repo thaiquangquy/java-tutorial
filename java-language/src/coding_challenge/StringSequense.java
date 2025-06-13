@@ -1,8 +1,9 @@
 package coding_challenge;
 
 public class StringSequense {
-    // giving string "te4st 3a i2s Thi1s", word position is embedded in the string
+    // giving string "te4st i2s Thi1s 3a", word position is embedded in the string
     // write function takes string above as input and returns the string with correct order
+    // expected result: "This is a test"
     
     public static String arrangeString(String str) {
         String[] words = str.split(" ");
@@ -30,7 +31,7 @@ public class StringSequense {
     }
     
     public static void main(String[] args) {
-        System.out.println(arrangeString("te4st 3a i2s Thi1s"));
+        System.out.println(arrangeString("te4st i2s Thi1s 3a"));
         System.out.println(arrangeString("intel5lij 4suggestion 3code tu1rn off2"));
     }
 }

@@ -122,7 +122,6 @@ class ProcessPaymentTest {
         creditCard.processPayment(amount);
         paypal.processPayment(amount);
     }
-
 }
 // Interface Segregation Principle
 interface Logger {
