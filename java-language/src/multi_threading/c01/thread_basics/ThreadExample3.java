@@ -1,4 +1,4 @@
-package multi_threading.thread_basics;
+package multi_threading.c01.thread_basics;
 
 public class ThreadExample3 {
     // Implement Runnable interface

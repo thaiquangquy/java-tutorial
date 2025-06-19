@@ -1,16 +1,14 @@
-package multi_threading.memory_model;
-
-import java.util.concurrent.atomic.AtomicInteger;
+package multi_threading.c03.memory_model;
 
 public class MyRunnable implements Runnable {
     
     private int count = 0;
-    private multi_threading.memory_model.MyObject myCtorObject;
+    private MyObject myCtorObject;
     
     public MyRunnable() {
     }
     
-    public MyRunnable(multi_threading.memory_model.MyObject myObject) {
+    public MyRunnable(MyObject myObject) {
         this.myCtorObject = myObject;
     }
     
@@ -20,7 +18,7 @@ public class MyRunnable implements Runnable {
     
     @Override
     public void run() {
-        multi_threading.memory_model.MyObject myObject = new multi_threading.memory_model.MyObject(); // This is a local variable and will not be share between threads
+        MyObject myObject = new MyObject(); // This is a local variable and will not be share between threads
         System.out.println(Thread.currentThread().getName() + " My local object: " + myObject);
         System.out.println(Thread.currentThread().getName() + " My ctor object: " + myCtorObject);
         

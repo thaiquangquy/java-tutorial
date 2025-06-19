@@ -1,4 +1,4 @@
-package multi_threading.virtual_thread;
+package multi_threading.c02.virtual_thread;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,4 +1,4 @@
-package multi_threading.virtual_thread;
+package multi_threading.c02.virtual_thread;
 
 public class VirtualThreadExample {
     public static void main(String[] args) {

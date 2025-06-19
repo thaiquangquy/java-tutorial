@@ -1,4 +1,4 @@
-package multi_threading.memory_model;
+package multi_threading.c03.memory_model;
 
 public class SeparateObjects {
     
@@ -7,9 +7,9 @@ public class SeparateObjects {
         String myLocalString = "Text"; // this in another way will be stored in heap since special behavior of String
         // To save memory, literal string will be created in heap and its reference could be share if another thread defines the same string
         
-        multi_threading.memory_model.MyObject myShareObject = new multi_threading.memory_model.MyObject();
-        Runnable runnable1 = new multi_threading.memory_model.MyRunnable(myShareObject);
-        Runnable runnable2 = new multi_threading.memory_model.MyRunnable(myShareObject);
+        MyObject myShareObject = new MyObject();
+        Runnable runnable1 = new MyRunnable(myShareObject);
+        Runnable runnable2 = new MyRunnable(myShareObject);
         
         Thread t1 = new Thread(runnable1);
         Thread t2 = new Thread(runnable2);

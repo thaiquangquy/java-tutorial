@@ -1,4 +1,4 @@
-package multi_threading.memory_model;
+package multi_threading.c03.memory_model;
 
 public class SharedObjects {
     
@@ -6,8 +6,8 @@ public class SharedObjects {
         int myLocalVar = 0; // this variable will be stored in stack
         String myLocalString = "Text"; // this in another way will be had stored in heap since special behavior of String
         // To save memory, literal string will be created in heap and its reference could be share if another thread defines the same string
-        multi_threading.memory_model.MyObject myShareObject = new multi_threading.memory_model.MyObject();
-        Runnable runnable = new multi_threading.memory_model.MyRunnable(myShareObject);
+        MyObject myShareObject = new MyObject();
+        Runnable runnable = new MyRunnable(myShareObject);
         
         Thread t1 = new Thread(runnable);
         Thread t2 = new Thread(runnable);
@@ -21,6 +21,6 @@ public class SharedObjects {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        System.out.println("Final result: " + ((multi_threading.memory_model.MyRunnable) runnable).getCount());
+        System.out.println("Final result: " + ((MyRunnable) runnable).getCount());
     }
 }
