@@ -24,7 +24,7 @@ public class SynchronizedHappenBefore {
         
         //3. count value will have the latest value from the main memory for the incremental operator
         // by Java happen before a guarantee
-        // but we don't know exactly when will the new value of count will make sure that the count value will be written to the main memory
+        // but we don't know exactly when will the new value of count make sure that the count value will be written to the main memory
         synchronized (this) {
             this.obj = o;
         }
